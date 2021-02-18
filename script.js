@@ -1,4 +1,6 @@
 var generateBtn = document.querySelector("#generate");
+//added variable for the copy button
+var copyBtn = document.querySelector("#copy");
 
 
 // Writes password to the #password input
@@ -46,11 +48,12 @@ function writePassword() {
   if (confirm("Do you want to include special characters?")) {
     allChars = allChars.concat(speclArr);
   }
+  //this code runs if the user did not select any types of characters, alert is displayed and the function runs again
   if (allChars.length === 0) {
     alert("At least one type of character must be chosen for a new password to be generated.");
     generatePassword()
   }
-  // for loop that refrences the allChars variable and selects a randon assortment of chracters according to the types of chracters chosen and the pwLength
+  // for loop that refrences the allChars variable and selects a randon assortment of chracters according to the user's inputs for the password criteria chosen and the pwLength
   for (let i = 0; i < pwLength; ++i) {
     let random = Math.floor(Math.random() * Math.floor(allChars.length));
     password += allChars[random];
@@ -62,4 +65,11 @@ function writePassword() {
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+// added the event listener function for the copy button which selects the newly generated password and then coppies it to the computer's clip board
+copyBtn.addEventListener("click", function () {
+  password.select();
+  document.execCommand("copy");
+  alert("Copied your new password");
+})
 
