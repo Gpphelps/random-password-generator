@@ -66,7 +66,7 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-// added the event listener function for the copy button which selects the newly generated password and then coppies it to the computer's clip board
+// added the event listener function for the copy button which selects the newly generated password and then copies it to the computer's clip board
 copyBtn.addEventListener("click", function () {
   password.select();
   document.execCommand("copy");

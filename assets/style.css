@@ -42,6 +42,12 @@ header {
   padding: 30px 40px;
 }
 
+/*centered the text "Generate a Password" */
+.card-header h2{
+  display: flex;
+  justify-content: center;
+}
+
 .card-header::after {
   content: " ";
   display: block;
