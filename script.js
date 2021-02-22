@@ -1,5 +1,5 @@
 var generateBtn = document.querySelector("#generate");
-//added variable for the copy button
+//added variable for the copy button.
 var copyBtn = document.querySelector("#copy");
 
 
@@ -31,23 +31,23 @@ function generatePassword() {
   let speclArr = specl.split("");
   let allChars = [];
 
-  //creates a blank string that is filled by the function
+  //creates a blank string that is filled by the function.
   let password = "";
 
-  //assigns the value input by the user to the var password length
+  //assigns the value input by the user to the var password length.
   let pwLength = prompt("How long would you like your new password to be? The length of your password must be at least 8 chracters but no more than 128.");
     
   if (pwLength < 8) {
     alert("Your password length is too short! You are required to input a password length of at least 8 characters.")
-    // generatePassword() //if the value given for pwLength is less than 8 characters the alert will display and the function returns a null value ending the function.
+   //if the value given for pwLength is less than 8 characters the alert will display and the function returns a null value ending the function.
     return null;
   } 
   if (pwLength > 128) {
     alert("Your password length is too long! You are required to input a password length of no more than 128 characters.")
     return null;
-    //if the value given for pwLength is greater than 128 characters the alert will display and the function returns a null value ending the function.
+   //if the value given for pwLength is greater than 128 characters the alert will display and the function returns a null value ending the function.
   } 
-  //prompts the user for which kinds of characters they would like in their password
+  //prompts the user for which kinds of characters they would like in their password and concats each chosen array into the allChars array.
   if (confirm("Do you want to include lowercase characters?")) {
     allChars = allChars.concat(lowCaseArr);
   }
@@ -70,13 +70,13 @@ function generatePassword() {
     let random = Math.floor(Math.random() * Math.floor(allChars.length));
     password += allChars[random];
   }
-  //displays the newly generated password onto the webpage
+  //displays the newly generated password onto the webpage.
   return password;
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-// added the event listener method for the copy button
+// added the event listener method for the copy button.
 copyBtn.addEventListener("click", copyPassword);
   
 
