@@ -14,7 +14,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #2c2d2e;
 }
 
 .wrapper {
@@ -27,11 +27,11 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: rgb(251, 250, 252);
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 3%, 46%);
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
@@ -46,11 +46,11 @@ header {
 .card-header h2{
   display: flex;
   justify-content: center;
+  color: rgb(58, 8, 175);
 }
 
 .card-header::after {
   content: " ";
-  display: block;
   width: 100%;
   background: #e7e9eb;
   height: 2px;
@@ -66,7 +66,6 @@ header {
 
 .card-footer::before {
   content: " ";
-  display: block;
   width: 100%;
   background: #e7e9eb;
   height: 2px;
@@ -80,7 +79,7 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: rgb(58, 8, 175);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
@@ -92,6 +91,14 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+  outline: none;
+}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  border-radius: 25px;
 }
 
 button[disabled] {
@@ -118,7 +125,6 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
