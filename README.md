@@ -7,7 +7,7 @@ This program generates a random password from 8 to 128 chracters that can also b
 
 To create a new passsword click the "Generate Password" button. Next, input a value of at least 8 and no more than 128 when prompted. Select the types of characters needed for the password when asked. The new password should be visible on the webpage. This passowrd can be coppied to the clipboard by clicking on the "Copy Password" button. The new passowrd can now be implemented whever the user sees fit.
 
-![Screen Shot](/C:/Desktop/random-password-generator/screenshot-R-P-G.png?raw=true)
+![Screen Shot](screenshot-R-P-G.png)
 
 ### Installation 
 
