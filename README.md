@@ -19,7 +19,7 @@ https://gpphelps.github.io/random-password-generator/
 If you would like to contribute in any way to this project please feel free to post an issue to the Github repository and I will address it.
 
 ### Features
-This password generator can create passwords from 8 to 128 characters, and can include the listed chracters:
+This password generator can create passwords from 8 to 128 characters, and can currently include the listed:
 * Lowercase letters
 * Uppercase letters
 * Numeric characters

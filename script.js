@@ -37,15 +37,15 @@ function generatePassword() {
   //assigns the value input by the user to the var password length
   let pwLength = prompt("How long would you like your new password to be? The length of your password must be at least 8 chracters but no more than 128.");
     
-  if (pwLength < 8 ) {
+  if (pwLength < 8) {
     alert("Your password length is too short! You are required to input a password length of at least 8 characters.")
     // generatePassword() //if the value given for pwLength is less than 8 characters the alert will display and the function returns a null value ending the function.
     return null;
   } 
-  if (pwLength > 128 ) {
+  if (pwLength > 128) {
     alert("Your password length is too long! You are required to input a password length of no more than 128 characters.")
     return null;
-    // generatePassword() //if the value given for pwLength is greater than 128 characters the alert will display and the function returns a null value ending the function.
+    //if the value given for pwLength is greater than 128 characters the alert will display and the function returns a null value ending the function.
   } 
   //prompts the user for which kinds of characters they would like in their password
   if (confirm("Do you want to include lowercase characters?")) {
@@ -63,7 +63,6 @@ function generatePassword() {
   //this code runs if the user did not select any types of characters, alert is displayed and the function returns a null value ending the function.
   if (allChars.length === 0) {
     alert("At least one type of character must be chosen for a new password to be generated.");
-    // generatePassword()
     return null;
   }
   // for loop 
