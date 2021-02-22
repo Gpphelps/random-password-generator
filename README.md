@@ -12,6 +12,7 @@ To create a new passsword click the "Generate Password" button. Next, input a va
 ### Installation 
 
 Installation: There is no instillation for this program as it is a website. If you would like to access the website visit: 
+https://gpphelps.github.io/random-password-generator/
 
 ### Contributing 
 
