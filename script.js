@@ -44,13 +44,8 @@ function generatePassword() {
   } 
   if (pwLength > 128) {
     alert("Your password length is too long! You are required to input a password length of no more than 128 characters.");
-    return null;
-   //if the value given for pwLength is greater than 128 characters the alert will display and the function returns a null value ending the function.
+    return null; //if the value given for pwLength is greater than 128 characters the alert will display and the function returns a null value ending the function.
   } 
-  if (pwLength === string) {
-    alert("You must choose a number between 8 and 128.");
-    return null;
-  }
   //prompts the user for which kinds of characters they would like in their password and concats each chosen array into the allChars array.
   if (confirm("Do you want to include lowercase characters?")) {
     allChars = allChars.concat(lowCaseArr);
